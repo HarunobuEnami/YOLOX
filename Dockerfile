@@ -7,3 +7,4 @@ RUN pip3 install -U pip && pip install -r ./YOLOX/requirements.txt
 RUN pip3 install -v -e ./YOLOX  
 RUN pip3 install cython
 RUN pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs
